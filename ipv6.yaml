@@ -1,0 +1,9 @@
+---
+- name: 'Create project'
+  awx.awx.tower_project:
+    name: 'Foo'
+    tower_host: 'fd00:2001::1/64'
+    tower_username: 'username'
+    tower_password: 'password'
+    organization: 'Default'
+    state: present
